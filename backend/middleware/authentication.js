@@ -7,7 +7,7 @@ const authentication=(req,res,next)=>{
     }
 
     const token=req.headers.authorization.split(" ")[1]
-    jwt.verify(token,"hihi",function(err,decoded){
+    jwt.verify(token,"ii",function(err,decoded){
         if(err){
             res.send("please login")
         }
